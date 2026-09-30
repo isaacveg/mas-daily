@@ -1,6 +1,6 @@
 # 每日多智能体系统论文日报 —— GitHub Pages 站点配置
-# 说明：gen/ 目录由 每日调查/scripts/publish_site.py 自动同步生成，
-#       其中文件每次发布都会被覆盖，请勿手工修改。
+# 说明：index.md / daily/ / assets/ 由 每日调查/scripts/publish_site.py 自动同步生成，
+#       每次发布会覆盖这些内容，请勿手工修改。
 
 title: 多智能体系统论文日报
 description: >-
@@ -20,9 +20,11 @@ minima:
   date_format: "%Y-%m-%d"
   show_excerpts: false
 
-# 只构建发布脚本生成的内容（gen/）与静态资源
+# assets/ 目录必须显式 include：Jekyll 只复制未排除的文件，显式列出可避免
+# 因为 exclude/include 规则变动导致图片被漏掉（图片 404 的直接原因）。
 include:
-  - gen
+  - assets
+  - daily
 
 # 不进入站点的文件
 exclude:
@@ -39,6 +41,6 @@ header_pages:
 
 defaults:
   - scope:
-      path: "gen/daily"
+      path: "daily"
     values:
       layout: page
