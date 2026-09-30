@@ -341,29 +341,28 @@ body.daily h4 + blockquote {
 
 body.daily h4 + blockquote p { margin: 0; }
 
-/* 论文条目里的列表：去掉项目符号，做成信息行 */
-body.daily h4 ~ ul {
-  list-style: none;
-  margin: 0 0 0 38px;
-  padding: 0;
-}
-
-body.daily h4 ~ ul > li {
-  margin: 6px 0;
+/* 论文条目的字段行（当前生成器输出为独立段落，如「- 机构（T0）：…」） */
+body.daily h4 ~ p {
+  margin: 7px 0;
   font-size: 14.5px;
   color: var(--ink-soft);
+  padding-left: 38px;
 }
 
-/* 机构 / 层级 / 分类 的元信息行（首个 li 常含「机构（T0）：…」） */
-body.daily h4 ~ ul > li:first-child { color: var(--ink); }
+body.daily h4 ~ p:first-of-type { color: var(--ink); }
 
-body.daily h4 ~ ul > li > em { color: var(--muted); font-style: normal; }
+/* 摘要正文稍宽一点 */
+body.daily h4 ~ p.abstract,
+body.daily h4 ~ p:has(+ details) { color: var(--ink); }
 
-/* 「机构（T0）：」这类标签着色 */
-body.daily h4 ~ ul > li strong { color: var(--ink); }
+/* 兼容仍使用无序列表的旧版日报 */
+body.daily h4 ~ ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 38px;
+}
 
-/* 摘要 / 核心内容 的强调标签（由生成器写成 **摘要（中文）** 等） */
-body.daily h4 ~ ul > li > strong:first-child { color: var(--accent-ink); }
+body.daily h4 ~ ul > li { margin: 7px 0; font-size: 14.5px; color: var(--ink-soft); }
 
 /* 英文原文折叠块 */
 body.daily details {
