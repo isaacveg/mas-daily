@@ -5,7 +5,7 @@
 title: 多智能体系统论文日报
 description: >-
   arXiv 上多智能体系统 / LLM 智能体（MAS / LLM-Agent）方向的每日论文日报：
-  只收录能识别出明确 T0/T1 机构的论文，摘要译为中文并配架构图与结果图。
+  只收录能识别出明确 T0/T1 机构的论文，标题与摘要均由中文重写，并附 arXiv 原文链接。
 
 theme: minima
 lang: zh-CN
@@ -31,10 +31,6 @@ exclude:
   - vendor
 
 sitemap: false
-
-# 顶部导航只放首页，避免每期日报都挤进导航栏
-header_pages:
-  - index.md
 
 defaults:
   - scope:
