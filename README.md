@@ -3,8 +3,8 @@
 arXiv 上多智能体系统 / LLM 智能体（MAS / LLM-Agent）方向的每日论文日报。
 
 - **在线站点**：<https://isaacveg.github.io/mas-daily/>
-- **每日一期的 Markdown 原文**：[`gen/daily/`](gen/daily/)
-- **图片资源**：[`gen/assets/`](gen/assets/)
+- **每日一期的 Markdown 原文**：[`daily/`](daily/)
+- **图片资源**：[`assets/`](assets/)
 
 ## 筛选口径
 
@@ -17,7 +17,7 @@ arXiv 上多智能体系统 / LLM 智能体（MAS / LLM-Agent）方向的每日�
 
 ## 说明
 
-本站内容由本地脚本 [`每日调查/scripts/publish_site.py`](https://github.com/isaacveg/mas-daily)
-自动同步发布，`gen/` 目录下的文件每次发布都会被覆盖。
+本站内容由本地脚本 `每日调查/scripts/publish_site.py` 自动同步发布，
+`index.md` / `daily/` / `assets/` 每次发布都会被覆盖，请勿手工修改。
 
 论文版权归原作者所有，此处仅摘录标题、摘要与少量插图用于学术速览，并保留 arXiv 原文链接。
