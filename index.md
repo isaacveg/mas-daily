@@ -4,6 +4,8 @@ title: "多智能体系统论文日报"
 permalink: /
 ---
 
+# 多智能体系统论文日报
+
 arXiv 上多智能体系统 / LLM 智能体（MAS / LLM-Agent）方向的每日论文日报：只收录能识别出明确 T0/T1 机构的论文，标题与摘要均由中文重写，并附 arXiv 原文链接。
 
 **最新一期：2026-09-30**　·　共 2 期　·　仓库源码：[isaacveg/mas-daily](https://github.com/isaacveg/mas-daily)
