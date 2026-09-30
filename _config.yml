@@ -33,6 +33,10 @@ exclude:
 
 sitemap: false
 
+# 顶部导航只放首页，避免每期日报都挤进导航栏
+header_pages:
+  - index.md
+
 defaults:
   - scope:
       path: "gen/daily"
