@@ -13,9 +13,6 @@ timezone: Asia/Shanghai
 url: "https://isaacveg.github.io"
 baseurl: "/mas-daily"
 
-author:
-  name: isaaczhu
-
 minima:
   date_format: "%Y-%m-%d"
   show_excerpts: false
