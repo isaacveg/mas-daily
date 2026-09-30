@@ -1,0 +1,40 @@
+# 每日多智能体系统论文日报 —— GitHub Pages 站点配置
+# 说明：gen/ 目录由 每日调查/scripts/publish_site.py 自动同步生成，
+#       其中文件每次发布都会被覆盖，请勿手工修改。
+
+title: 多智能体系统论文日报
+description: >-
+  arXiv 上多智能体系统 / LLM 智能体（MAS / LLM-Agent）方向的每日论文日报：
+  只收录能识别出明确 T0/T1 机构的论文，摘要译为中文并配架构图与结果图。
+
+theme: minima
+lang: zh-CN
+timezone: Asia/Shanghai
+url: "https://isaacveg.github.io"
+baseurl: "/mas-daily"
+
+author:
+  name: isaaczhu
+
+minima:
+  date_format: "%Y-%m-%d"
+  show_excerpts: false
+
+# 只构建发布脚本生成的内容（gen/）与静态资源
+include:
+  - gen
+
+# 不进入站点的文件
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+sitemap: false
+
+defaults:
+  - scope:
+      path: "gen/daily"
+    values:
+      layout: page

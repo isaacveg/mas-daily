@@ -1,0 +1,11 @@
+# 不被发布脚本同步、也不该入库的本地文件
+_cache/
+_state/
+logs/
+__pycache__/
+*.pyc
+.DS_Store
+_site/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
