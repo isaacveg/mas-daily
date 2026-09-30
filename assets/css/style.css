@@ -150,14 +150,14 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 28px 0; }
 /* ==========================================================================
    首页
    ========================================================================== */
-body.home .wrapper > h1 {
+body.home-page .wrapper > h1 {
   margin: 40px 0 6px;
   font-size: 33px;
   line-height: 1.3;
   letter-spacing: .3px;
 }
 
-body.home .wrapper > h1::after {
+body.home-page .wrapper > h1::after {
   content: "";
   display: block;
   width: 56px;
@@ -167,12 +167,12 @@ body.home .wrapper > h1::after {
   background: linear-gradient(90deg, var(--accent), var(--t0));
 }
 
-body.home .wrapper > h1 + p { color: var(--ink-soft); margin: 18px 0 0; }
+body.home-page .wrapper > h1 + p { color: var(--ink-soft); margin: 18px 0 0; }
 
 /* 「最新一期 · 共 N 期 · 源码」行 */
-body.home .wrapper > h1 ~ p:first-of-type { color: var(--muted); font-size: 14px; }
+body.home-page .wrapper > h1 ~ p:first-of-type { color: var(--muted); font-size: 14px; }
 
-body.home h2 {
+body.home-page h2 {
   font-size: 17px;
   margin: 34px 0 12px;
   padding-bottom: 8px;
@@ -180,7 +180,7 @@ body.home h2 {
 }
 
 /* 首页索引表格 */
-body.home table {
+body.home-page table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
@@ -193,7 +193,7 @@ body.home table {
   margin: 16px 0 8px;
 }
 
-body.home thead th {
+body.home-page thead th {
   text-align: left;
   font-size: 12.5px;
   font-weight: 600;
@@ -203,32 +203,32 @@ body.home thead th {
   white-space: nowrap;
 }
 
-body.home tbody td {
+body.home-page tbody td {
   padding: 14px 16px;
   border-top: 1px solid var(--line);
   vertical-align: middle;
 }
 
-body.home tbody tr:hover { background: var(--accent-soft); }
+body.home-page tbody tr:hover { background: var(--accent-soft); }
 
-body.home tbody td:first-child {
+body.home-page tbody td:first-child {
   font-weight: 600;
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
 
 /* 收录 / T0 / T1 数字列 */
-body.home tbody td:nth-child(2),
-body.home tbody td:nth-child(3),
-body.home tbody td:nth-child(4) {
+body.home-page tbody td:nth-child(2),
+body.home-page tbody td:nth-child(3),
+body.home-page tbody td:nth-child(4) {
   text-align: center;
   font-variant-numeric: tabular-nums;
   font-weight: 600;
 }
 
-body.home tbody td:nth-child(5) { text-align: right; white-space: nowrap; }
+body.home-page tbody td:nth-child(5) { text-align: right; white-space: nowrap; }
 
-body.home tbody td:nth-child(5) a {
+body.home-page tbody td:nth-child(5) a {
   display: inline-block;
   padding: 5px 13px;
   border-radius: 9px;
@@ -238,13 +238,13 @@ body.home tbody td:nth-child(5) a {
   font-weight: 500;
 }
 
-body.home tbody td:nth-child(5) a:hover {
+body.home-page tbody td:nth-child(5) a:hover {
   text-decoration: none;
   opacity: .9;
   color: #fff;
 }
 
-body.home blockquote {
+body.home-page blockquote {
   margin: 26px 0 0;
   padding: 14px 18px;
   background: var(--card);
@@ -255,19 +255,19 @@ body.home blockquote {
   font-size: 13px;
 }
 
-body.home blockquote p { margin: 0; }
+body.home-page blockquote p { margin: 0; }
 
 /* ==========================================================================
    日报页
    ========================================================================== */
-body.daily .wrapper > h1 {
+body.daily-page .wrapper > h1 {
   margin: 34px 0 14px;
   font-size: 26px;
   line-height: 1.35;
 }
 
 /* 概要行（生成时间 / 主题 / 收录 N 篇） */
-body.daily .wrapper > blockquote {
+body.daily-page .wrapper > blockquote {
   margin: 0 0 22px;
   padding: 14px 18px;
   background: var(--card);
@@ -279,18 +279,18 @@ body.daily .wrapper > blockquote {
   text-align: center;
 }
 
-body.daily .wrapper > blockquote p { margin: 0; }
+body.daily-page .wrapper > blockquote p { margin: 0; }
 
-body.daily h2 {
+body.daily-page h2 {
   font-size: 18px;
   margin: 38px 0 14px;
   padding-bottom: 8px;
   border-bottom: 1px solid var(--line);
 }
 
-body.daily h3 { font-size: 15px; margin: 26px 0 10px; }
+body.daily-page h3 { font-size: 15px; margin: 26px 0 10px; }
 
-body.daily h4 {
+body.daily-page h4 {
   font-size: 17px;
   line-height: 1.45;
   margin: 0 0 12px;
@@ -299,7 +299,7 @@ body.daily h4 {
 }
 
 /* 序号徽标：<span data-idx="N"> 由 publish_site.py 注入 */
-body.daily h4 > span[data-idx] {
+body.daily-page h4 > span[data-idx] {
   counter-increment: paper;
   position: absolute;
   left: 0;
@@ -316,21 +316,21 @@ body.daily h4 > span[data-idx] {
   justify-content: center;
 }
 
-body.daily h4 > span[data-idx]::before { content: counter(paper); }
+body.daily-page h4 > span[data-idx]::before { content: counter(paper); }
 
-body.daily { counter-reset: paper; }
+body.daily-page { counter-reset: paper; }
 
 /* 每条论文卡片：h4 开头，到下一个 h4 / hr 结束 */
-body.daily h4 {
+body.daily-page h4 {
   padding-top: 22px;
   border-top: 1px solid var(--line);
   margin-top: 0;
 }
 
-body.daily h4:first-of-type { border-top: 0; padding-top: 6px; }
+body.daily-page h4:first-of-type { border-top: 0; padding-top: 6px; }
 
 /* 每条论文的中文标题（H4 后紧跟的引用块） */
-body.daily h4 + blockquote {
+body.daily-page h4 + blockquote {
   margin: 0 0 12px 38px;
   padding: 0 0 0 12px;
   border: 0;
@@ -339,33 +339,33 @@ body.daily h4 + blockquote {
   font-size: 14px;
 }
 
-body.daily h4 + blockquote p { margin: 0; }
+body.daily-page h4 + blockquote p { margin: 0; }
 
 /* 论文条目的字段行（当前生成器输出为独立段落，如「- 机构（T0）：…」） */
-body.daily h4 ~ p {
+body.daily-page h4 ~ p {
   margin: 7px 0;
   font-size: 14.5px;
   color: var(--ink-soft);
   padding-left: 38px;
 }
 
-body.daily h4 ~ p:first-of-type { color: var(--ink); }
+body.daily-page h4 ~ p:first-of-type { color: var(--ink); }
 
 /* 摘要正文稍宽一点 */
-body.daily h4 ~ p.abstract,
-body.daily h4 ~ p:has(+ details) { color: var(--ink); }
+body.daily-page h4 ~ p.abstract,
+body.daily-page h4 ~ p:has(+ details) { color: var(--ink); }
 
 /* 兼容仍使用无序列表的旧版日报 */
-body.daily h4 ~ ul {
+body.daily-page h4 ~ ul {
   list-style: none;
   margin: 0;
   padding-left: 38px;
 }
 
-body.daily h4 ~ ul > li { margin: 7px 0; font-size: 14.5px; color: var(--ink-soft); }
+body.daily-page h4 ~ ul > li { margin: 7px 0; font-size: 14.5px; color: var(--ink-soft); }
 
 /* 英文原文折叠块 */
-body.daily details {
+body.daily-page details {
   margin: 10px 0 0 38px;
   background: var(--card);
   border: 1px solid var(--line);
@@ -373,19 +373,19 @@ body.daily details {
   padding: 10px 14px;
 }
 
-body.daily details summary {
+body.daily-page details summary {
   cursor: pointer;
   color: var(--muted);
   font-size: 13px;
   outline: none;
 }
 
-body.daily details[open] summary { margin-bottom: 8px; }
+body.daily-page details[open] summary { margin-bottom: 8px; }
 
-body.daily details p { margin: 0; font-size: 13.5px; color: var(--muted); }
+body.daily-page details p { margin: 0; font-size: 13.5px; color: var(--muted); }
 
 /* 图片 */
-body.daily img {
+body.daily-page img {
   max-width: 100%;
   height: auto;
   display: block;
@@ -395,7 +395,7 @@ body.daily img {
   background: #fff;
 }
 
-body.daily hr { margin: 34px 0; }
+body.daily-page hr { margin: 34px 0; }
 
 /* 上一篇 / 下一篇 / 返回首页 导航条 */
 .day-nav {
@@ -443,7 +443,7 @@ body.daily hr { margin: 34px 0; }
 }
 
 /* 表格（日报内可能出现） */
-body.daily table {
+body.daily-page table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
@@ -454,21 +454,21 @@ body.daily table {
   overflow: hidden;
 }
 
-body.daily th,
-body.daily td { padding: 10px 12px; border-top: 1px solid var(--line); }
-body.daily thead th { background: var(--line-soft); color: var(--muted); }
+body.daily-page th,
+body.daily-page td { padding: 10px 12px; border-top: 1px solid var(--line); }
+body.daily-page thead th { background: var(--line-soft); color: var(--muted); }
 
 /* ---------------------------------------------------------------- 响应式 */
 @media (max-width: 700px) {
-  body.home .wrapper > h1 { font-size: 26px; margin-top: 28px; }
-  body.daily .wrapper > h1 { font-size: 21px; }
-  body.home table { font-size: 13.5px; }
-  body.home thead th, body.home tbody td { padding: 10px 10px; }
-  body.daily h4 { padding-left: 32px; font-size: 16px; }
-  body.daily h4 ~ p:first-of-type,
-  body.daily h4 ~ ul,
-  body.daily details,
-  body.daily img { margin-left: 32px; }
+  body.home-page .wrapper > h1 { font-size: 26px; margin-top: 28px; }
+  body.daily-page .wrapper > h1 { font-size: 21px; }
+  body.home-page table { font-size: 13.5px; }
+  body.home-page thead th, body.home-page tbody td { padding: 10px 10px; }
+  body.daily-page h4 { padding-left: 32px; font-size: 16px; }
+  body.daily-page h4 ~ p:first-of-type,
+  body.daily-page h4 ~ ul,
+  body.daily-page details,
+  body.daily-page img { margin-left: 32px; }
 }
 
 @media print {
