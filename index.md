@@ -8,7 +8,7 @@ permalink: /
 
 arXiv 上多智能体系统 / LLM 智能体（MAS / LLM-Agent）方向的每日论文日报：只收录能识别出明确 T0/T1 机构的论文，标题与摘要均由中文重写，并附 arXiv 原文链接。
 
-**最新一期：2026-10-30**　·　共 23 期　·　仓库源码：[isaacveg/mas-daily](https://github.com/isaacveg/mas-daily)
+**最新一期：2026-10-31**　·　共 24 期　·　仓库源码：[isaacveg/mas-daily](https://github.com/isaacveg/mas-daily)
 
 ## 筛选口径 {#scope}
 
@@ -18,6 +18,7 @@ arXiv `cs.MA / cs.AI / cs.CL / cs.LG / cs.SE / cs.RO` 最新投稿 → 多智能
 
 | 日期 | 收录 | T0 | T1 | 日报 |
 |------|:----:|:--:|:--:|------|
+| 2026-10-31 | 40 | 17 | 23 | [阅读]({{ site.baseurl }}/daily/2026-10-31/) |
 | 2026-10-30 | 0 | 0 | 0 | [阅读]({{ site.baseurl }}/daily/2026-10-30/) |
 | 2026-10-29 | 27 | 11 | 16 | [阅读]({{ site.baseurl }}/daily/2026-10-29/) |
 | 2026-10-28 | 35 | 20 | 15 | [阅读]({{ site.baseurl }}/daily/2026-10-28/) |
